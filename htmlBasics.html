@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Basics</title>
+  </head>
+  <style>
+    body {
+      background-color: white;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      background-color: #faedcd;
+      height: 100px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #333;
+      height: 40px;
+    }
+    .navbar a {
+      color: white;
+
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 2px;
+      color: black;
+    }
+
+    .about {
+      margin: 15px;
+      padding: 2px;
+    }
+
+    .careerimg {
+      display: block;
+      border-radius: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .java-section {
+      background-color: #faedcd;
+      display: flex;
+      align-items: center; /* vertically align image and text */
+      gap: 20px; /* space between image and content */
+    }
+
+    .javaimg {
+      width: 40%; /* image takes 40% of container width */
+    }
+
+    .javaContent {
+      width: 60%; /* text takes remaining 60% */
+    }
+
+    .python-section {
+      background-color: #e9edc9;
+      display: flex;
+      align-items: center; /* vertically align image and text */
+      gap: 20px; /* space between image and content */
+    }
+
+    .pythonContent {
+      width: 60%;
+      margin-left: 600px; /* centers content vertically */
+    }
+
+    .pythonimg {
+      width: 40%; /* image takes 40% of container width */
+    }
+
+    .cloud-section {
+      background-color: #fefae0;
+      display: flex;
+      align-items: center; /* vertically align image and text */
+      gap: 20px; /* space between image and content */
+    }
+
+    .cloudimg {
+      width: 40%; /* image takes 40% of container width */
+    }
+
+    .cloudContent {
+      width: 60%; /* text takes remaining 60% */
+    }
+
+    #channels {
+      background-color: #b0c4b1;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      padding-left: 50px;
+      gap: 100px; /* spacing between each channel block */
+    }
+
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* space between videos */
+      background-color: #edede9;
+      padding: 20px;
+    }
+
+    .video2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* space between videos */
+      background-color: #edede9;
+      padding: 20px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1 class="title">Career Stack</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#java-section">Java</a>
+        <a href="#python-section">Python</a>
+        <a href="#cloud-section">Cloud</a>
+        <a href="#suggest">Suggestions</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="about">
+        <h2>About Software Industry</h2>
+        <p>
+          Software jobs involve working with technology to design, develop,
+          test, and maintain software applications,systems, and platforms. These
+          jobs can vary depending on the specialization, such as:
+        </p>
+        <ul>
+          <li>
+            Software Developer / Engineer : Building applications, websites, and
+            tools.
+          </li>
+          <li>Backend Developer : Server-side logic, APIs, databases.</li>
+          <li>Frontend Developer : User interface and client-side coding.</li>
+          <li>Full Stack Developer : Both frontend + backend.</li>
+          <li>
+            Data Engineer / Scientist : Working with data pipelines, analytics,
+            AI/ML.
+          </li>
+          <li>Cybersecurity Analyst : Protecting systems from threats.</li>
+          <li>Cloud Engineer : Deploying applications on cloud platforms.</li>
+          <li>
+            DevOps Engineer : Automating development, testing, and deployment.
+          </li>
+          <li>QA / Tester : Ensuring software quality.</li>
+        </ul>
+        <br />
+
+        <h2>Benefits of Software Jobs</h2>
+        <ol>
+          <li>
+            High Demand : Software skills are in high demand across industries.
+          </li>
+          <li>
+            Good Pay : Software jobs often offer competitive salaries and
+            benefits.
+          </li>
+          <li>
+            Remote Work : Many software jobs can be done remotely, offering
+            flexibility.
+          </li>
+          <li>
+            Continuous Learning : The tech field is always evolving, providing
+            opportunities to learn new skills.
+          </li>
+          <li>
+            Creative Problem Solving : Software development involves solving
+            complex problems creatively.
+          </li>
+          <li>
+            Impactful Work : Software can have a significant impact on
+            businesses and society.
+          </li>
+          <li>
+            Career Growth : There are many paths for advancement in software
+            careers.
+          </li>
+          <li>
+            Collaboration : Software development often involves working in
+            teams, fostering collaboration.
+          </li>
+          <li>
+            Global Opportunities : Software skills are transferable worldwide,
+            opening up international job opportunities.
+          </li>
+          <li>
+            Innovation : The tech industry is at the forefront of innovation,
+            allowing you to work on cutting-edge projects.
+          </li>
+        </ol>
+      </div>
+
+      <br />
+      <br />
+
+      <img class="careerimg" src="images/Careers.jpg" alt="Career Image" />
+      <br />
+      <br />
+      <br />
+
+      <div class="java-section" id="java-section">
+        <img class="javaimg" src="images/Java-Logo.png" alt="Java Logo" />
+
+        <div class="javaContent">
+          <h4>Full Stack Java Developer</h4>
+          <p>Skills You need:</p>
+          <ul>
+            <li>Core Java, Advanced Java</li>
+            <li>Spring, Spring Boot, Hibernate</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React or Angular</li>
+            <li>MySQL / PostgreSQL</li>
+            <li>Git, REST APIs, Docker basics</li>
+          </ul>
+          <br />
+          <p>Jobs you can get:</p>
+          <ul>
+            <li>Java Backend Developer</li>
+            <li>Full Stack Java Developer</li>
+            <li>Software Engineer</li>
+            <li>API Developer</li>
+          </ul>
+          <br />
+          <br />
+        </div>
+      </div>
+
+      <div class="python-section" id="python-section">
+        <div class="pythonContent">
+          <br />
+          <h4>Python Developer</h4>
+          <p>Skills You need:</p>
+          <ul>
+            <li>Core Python, OOPs</li>
+            <li>Django / Flask</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React or Angular</li>
+            <li>MySQL / PostgreSQL</li>
+            <li>Git, REST APIs, Docker basics</li>
+          </ul>
+          <br />
+          <p>Jobs you can get:</p>
+          <ul>
+            <li>Python Backend Developer</li>
+            <li>Full Stack Python Developer</li>
+            <li>Software Engineer</li>
+            <li>API Developer</li>
+            <br />
+            <br />
+          </ul>
+        </div>
+        <img class="pythonimg" src="images/python-logo.png" alt="Python Logo" />
+      </div>
+
+      <div class="cloud-section" id="cloud-section">
+        <img
+          class="cloudimg"
+          src="images/Microsoft-Azure.png"
+          alt="Cloud Logo"
+        />
+
+        <div class="cloudContent">
+          <h4>Cloud Engineer</h4>
+          <p>Skills You need:</p>
+          <ul>
+            <li>Cloud Platforms : AWS, Azure, GCP</li>
+            <li>Linux basics</li>
+            <li>Networking basics</li>
+            <li>Containers : Docker, Kubernetes</li>
+            <li>Infrastructure as Code : Terraform, CloudFormation</li>
+            <li>CI/CD : Jenkins, GitHub Actions</li>
+            <li>Monitoring : Prometheus, Grafana</li>
+          </ul>
+          <br />
+          <p>Jobs you can get:</p>
+          <ul>
+            <li>Cloud Engineer</li>
+            <li>DevOps Engineer</li>
+            <li>Site Reliability Engineer</li>
+            <li>Cloud Architect</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="channels">
+        <h2 style="text-align: center">Popular coding channels</h2>
+        <br />
+        <div class="channel">
+          <a href="http://www.youtube.com/@ApnaCollegeOfficial" target="_blank">
+            <img
+              src="https://yt3.googleusercontent.com/FEcjRtez5od8UowDo6tTt9WlE-MrIFEmcwPMTORmK9Swk6KCklOmA3xfIG9WuLWfNYfNThQE=s900-c-k-c0x00ffffff-no-rj"
+              width="200"
+              class="chimg"
+            />
+          </a>
+          <p id="ap">Apna College</p>
+        </div>
+
+        <div class="channel">
+          <a href="http://www.youtube.com/@Telusko" target="_blank">
+            <img
+              src="https://yt3.googleusercontent.com/ytc/AIdro_lB5cw1qC6jI-egBsLGEj1GP3TFC6lkCTm8X5DRrcuTBI8h=s900-c-k-c0x00ffffff-no-rj"
+              width="200"
+              class="chimg"
+            />
+          </a>
+          <p id="tl">Telusuko</p>
+        </div>
+
+        <div class="channel">
+          <a href="http://www.youtube.com/@programmingwithmosh" target="_blank">
+            <img
+              src="https://yt3.googleusercontent.com/HCv0fXFEEcD0HRyF0_qR1K7b7qO3KCzmIoyH1DEJYB94CIUFhIE5i2t2IDIPX97W1-DK4hegww=s900-c-k-c0x00ffffff-no-rj"
+              width="200"
+              class="chimg"
+            />
+          </a>
+          <p id="pm">Programming with mosh</p>
+        </div>
+      </div>
+
+      <h1 style="text-align: center; background-color: #edede9" id="suggest">
+        Suggested Videos
+      </h1>
+
+      <h2 style="margin-left: 20px"><b>For Python, MySQL, HTML And CSS</b></h2>
+
+      <div class="videos">
+        <iframe
+          class="vlink"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ERCMXc8x7mc?si=UpwpyVz25swpZ5uo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          class="vlink"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hlGoQC332VM?si=U4FlgwYX0k61tPi3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <iframe
+          class="vlink"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HcOc7P5BMi4?si=BqyPkkgrlErAS0ZF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          class="vlink"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ESnrn1kAD4E?si=j5Fs-xy2fIpseYyB"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <br />
+      </div>
+
+      <h2 style="margin-left: 20px"><b>For Java And Datastructures</b></h2>
+
+      <div class="video2">
+        <iframe
+          class="vlink"
+          width="560"
+          height="315"
+          style="margin: 50px; background-color: #edede9"
+          src="https://www.youtube.com/embed/BGTx91t8q50?si=97kxsxlTsJ5CNF2G"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          class="vlink"
+          width="560"
+          height="315"
+          style="margin: 50px; background-color: #edede9"
+          src="https://www.youtube.com/embed/4_HOnhB64Dg?si=upRMQ7i71UZPZ0GN"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <footer style="text-align: center">
+      <p>&copy; 2025 Career Stack. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
